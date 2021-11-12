@@ -6,3 +6,5 @@ pipenv shell
 #安装模块
 pipenv install * -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+pipenv shell
+pyinstaller -F E:\任务\github\DocumentationCapture\DocumentationCapture.py
