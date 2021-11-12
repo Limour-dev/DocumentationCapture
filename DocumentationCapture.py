@@ -69,6 +69,9 @@ def tD():
         print(i)
         sleep()
 
+import ctypes
+ctypes.windll.kernel32.SetConsoleTitleW("lqJnMCy7fOFsS4ZG")
+
 t1 = threading.Thread(target=tU, daemon=True)
 t2 = threading.Thread(target=tD, daemon=True)
 t1.start()
