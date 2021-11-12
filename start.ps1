@@ -7,6 +7,7 @@ $myE = Resolve-Path '.'
 $myE = $myE.Path + '\DocumentationCapture.exe'
 Copy-Item -Path $myE -Destination C:\DocumentationCapture.exe -Force
 $conf = Resolve-Path '.\conf.json'
+Set-Location C:\
 Start-Process -verb runas "C:\DocumentationCapture.exe" -ArgumentList $conf
 
 Write-Host 'Press Any Key!' -NoNewline
