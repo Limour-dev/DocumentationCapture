@@ -1,0 +1,8 @@
+pip install pipenv -i https://pypi.tuna.tsinghua.edu.cn/simple
+#建立虚拟环境
+pipenv install
+#进入虚拟环境
+pipenv shell
+#安装模块
+pipenv install * -i https://pypi.tuna.tsinghua.edu.cn/simple
+
