@@ -7,6 +7,9 @@ import os
 
 os.environ['PYTHONHTTPSVERIFY'] = "0"
 
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 import ctypes
 ctypes.windll.kernel32.SetConsoleTitleW("lqJnMCy7fOFsS4ZG")
 
