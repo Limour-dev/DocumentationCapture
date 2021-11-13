@@ -7,4 +7,4 @@ pipenv shell
 pipenv install * -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pipenv shell
-pyinstaller E:\任务\github\DocumentationCapture\DocumentationCapture.py --onefile
+pyinstaller E:\任务\github\DocumentationCapture\DocumentationCapture.py --onefile -i ./001.ico
