@@ -1,5 +1,5 @@
  param (
-    [string]$wd
+    [string]$wd=$PSScriptRoot
  )
 Set-Location $wd
 
